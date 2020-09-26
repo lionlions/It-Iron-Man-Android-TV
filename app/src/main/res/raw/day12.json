@@ -1,0 +1,91 @@
+{
+  "data": [
+    {
+      "category_name": "哈燒影榜",
+      "items": [
+        {
+          "name": "TENET 天能",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730009.jpg"
+        },
+        {
+          "name": "整容液",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831007.jpg"
+        },
+        {
+          "name": "特務搞飛機",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831006.jpg"
+        },
+        {
+          "name": "馗降：粽邪2",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200811010.jpg"
+        },
+        {
+          "name": "花木蘭",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200908002.jpg"
+        }
+      ]
+    },
+    {
+      "category_name": "熱售中",
+      "items": [
+        {
+          "name": "電影哆啦A夢：大雄的新恐龍",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200819009.jpg"
+        },
+        {
+          "name": "TENET 天能",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730009.jpg"
+        },
+        {
+          "name": "舞台 刀劍亂舞 悲傳 結目不如歸",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200904003.jpg"
+        },
+        {
+          "name": "角落小夥伴電影版：魔法繪本裡的新朋友",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200518007.jpg"
+        },
+        {
+          "name": "刻在你心底的名字",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200908003.jpg"
+        },
+        {
+          "name": "消失的情人節",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200812001.jpg"
+        }
+      ]
+    },
+    {
+      "category_name": "即將上映",
+      "items": [
+        {
+          "name": "倉之亂",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200925016.jpg"
+        },
+        {
+          "name": "急先鋒",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200918004.jpg"
+        },
+        {
+          "name": "捉魂鏡",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200917004.jpg"
+        },
+        {
+          "name": "遺落夢境",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200914001.jpg"
+        },
+        {
+          "name": "交響狂人",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200908005.jpg"
+        },
+        {
+          "name": "阿公當家",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200917001.jpg"
+        },
+        {
+          "name": "森林特攻隊：大腳ㄚ家族",
+          "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831009.jpg"
+        }
+      ]
+    }
+  ]
+}
