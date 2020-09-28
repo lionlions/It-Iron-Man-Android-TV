@@ -1,0 +1,294 @@
+{
+  "data": [
+    {
+      "category_name": "哈燒影榜",
+      "sub_categories": [
+        {
+          "sub_category_name": "懸疑",
+          "items": [
+            {
+              "name": "TENET 天能",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730009.jpg"
+            },
+            {
+              "name": "整容液",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831007.jpg"
+            },
+            {
+              "name": "馗降：粽邪2",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200811010.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "驚悚",
+          "items": [
+            {
+              "name": "TENET 天能",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730009.jpg"
+            },
+            {
+              "name": "整容液",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831007.jpg"
+            },
+            {
+              "name": "馗降：粽邪2",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200811010.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "動作",
+          "items": [
+            {
+              "name": "TENET 天能",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730009.jpg"
+            },
+            {
+              "name": "特務搞飛機",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831006.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "奇幻/科幻",
+          "items": [
+            {
+              "name": "整容液",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831007.jpg"
+            },
+            {
+              "name": "花木蘭",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200908002.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_name": "熱售中",
+      "sub_categories": [
+        {
+          "sub_category_name": "懸疑",
+          "items": [
+            {
+              "name": "TENET 天能",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730009.jpg"
+            },
+            {
+              "name": "密弒直播",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200819017.jpg"
+            },
+            {
+              "name": "整容液",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831007.jpg"
+            },
+            {
+              "name": "馗降：粽邪2",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200811010.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "驚悚",
+          "items": [
+            {
+              "name": "密弒直播",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200819017.jpg"
+            },
+            {
+              "name": "TENET 天能",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730009.jpg"
+            },
+            {
+              "name": "整容液",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831007.jpg"
+            },
+            {
+              "name": "馗降：粽邪2",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200811010.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "動畫",
+          "items": [
+            {
+              "name": "電影哆啦A夢：大雄的新恐龍",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200819009.jpg"
+            },
+            {
+              "name": "角落小夥伴電影版：魔法繪本裡的新朋友",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200518007.jpg"
+            },
+            {
+              "name": "言葉之庭",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200713017.jpg"
+            },
+            {
+              "name": "追逐繁星的孩子",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200710009.jpg"
+            },
+            {
+              "name": "雲之彼端，約定的地方",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200710008.jpg"
+            },
+            {
+              "name": "秒速5公分",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200710011.jpg"
+            },
+            {
+              "name": "春櫻之歌",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730007.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "冒險",
+          "items": [
+            {
+              "name": "電影哆啦A夢：大雄的新恐龍",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200819009.jpg"
+            },
+            {
+              "name": "TENET 天能",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730009.jpg"
+            },
+            {
+              "name": "整容液",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831007.jpg"
+            },
+            {
+              "name": "馗降：粽邪2",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200811010.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "劇情",
+          "items": [
+            {
+              "name": "TENET 天能",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730009.jpg"
+            },
+            {
+              "name": "言葉之庭",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200713017.jpg"
+            },
+            {
+              "name": "舞台 刀劍亂舞 悲傳 結目不如歸",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200904003.jpg"
+            },
+            {
+              "name": "性之劇藥",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200921002.jpg"
+            },
+            {
+              "name": "法蒂瑪的奇蹟",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200901002.jpg"
+            },
+            {
+              "name": "太陽之家",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200728003.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "奇幻/科幻",
+          "items": [
+            {
+              "name": "整容液",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200831007.jpg"
+            },
+            {
+              "name": "花木蘭",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200908002.jpg"
+            },
+            {
+              "name": "春櫻之歌",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200730007.jpg"
+            },
+            {
+              "name": "角落小夥伴電影版：魔法繪本裡的新朋友",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200518007.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "愛情",
+          "items": [
+            {
+              "name": "追逐繁星的孩子",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200710009.jpg"
+            },
+            {
+              "name": "雲之彼端，約定的地方",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200710008.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_name": "即將上映",
+      "sub_categories": [
+        {
+          "sub_category_name": "驚悚",
+          "items": [
+            {
+              "name": "急先鋒",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200918004.jpg"
+            },
+            {
+              "name": "捉魂鏡",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200917004.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "動作",
+          "items": [
+            {
+              "name": "急先鋒",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200918004.jpg"
+            },
+            {
+              "name": "遺落夢境",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200914001.jpg"
+            },
+            {
+              "name": "刑警沒有假期",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200915003.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "奇幻/科幻",
+          "items": [
+            {
+              "name": "遺落夢境",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200914001.jpg"
+            }
+          ]
+        },
+        {
+          "sub_category_name": "劇情",
+          "items": [
+            {
+              "name": "刑警沒有假期",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200915003.jpg"
+            },
+            {
+              "name": "無價之保",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200915009.jpg"
+            },
+            {
+              "name": "特斯拉",
+              "imageUrl": "https://www.vscinemas.com.tw/vsweb/upload/film/film_20200925001.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
