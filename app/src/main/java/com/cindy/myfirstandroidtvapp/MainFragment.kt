@@ -24,6 +24,7 @@ class MainFragment: BrowseSupportFragment() {
 
         getMovieList()
         init()
+        mainFragmentRegistry.registerFragment(PageRow::class.java, PageRowFragmentFactory())
 
     }
 
@@ -36,52 +37,22 @@ class MainFragment: BrowseSupportFragment() {
 
     fun init(){
 
-        val mainAdapter: ArrayObjectAdapter = ArrayObjectAdapter(RowPresenter())
-        mainAdapter.presenterSelector = object:PresenterSelector(){
-            override fun getPresenter(item: Any?): Presenter {
-                Log.i(TAG, "item: $item")
-                return ListRowPresenter()
-            }
-
-            override fun getPresenters(): Array<Presenter> {
-                return super.getPresenters()
-            }
-        }
+        val mainAdapter: ArrayObjectAdapter = ArrayObjectAdapter(ListRowPresenter())
+        adapter = mainAdapter
 
         if(mMovieList!=null){
             mMovieListData = mMovieList!!.data
             if(mMovieListData!=null && mMovieListData!!.isNotEmpty()){
                 for((categoryIndex, category) in mMovieListData!!.withIndex()){
-                    val rowsAdapter: ArrayObjectAdapter = ArrayObjectAdapter(ListRowPresenter())
                     val categoryName: String? = category.category_name
                     if(BuildConfig.DEBUG) Log.w(TAG, "categoryName: $categoryName")
-                    val subCategoryList: List<SubCategory>? = category.sub_categories
-                    if(subCategoryList!=null && subCategoryList.isNotEmpty()){
-                        for ((subCategoryIndex, subCategory) in subCategoryList.withIndex()){
-                            val subCategoryName: String? = subCategory.sub_category_name
-                            if(BuildConfig.DEBUG) Log.d(TAG, "subCategoryName: $subCategoryName")
-                            val items: List<Item>? = subCategory.items
-                            val listRowAdapter: ArrayObjectAdapter = ArrayObjectAdapter(CustomCardPresenter())
-                            if(items!=null && items.isNotEmpty()){
-                                for(item in items){
-                                    if(BuildConfig.DEBUG) Log.i(TAG, "movieName: ${item.name}")
-                                    listRowAdapter.add(item)
-                                }
-                                val header: HeaderItem = HeaderItem(0, subCategoryName)
-                                rowsAdapter.add(ListRow(header, listRowAdapter))
-                            }
-                        }
-                    }
-                    val fragmentAdapter: ArrayObjectAdapter = ArrayObjectAdapter()
-                    val rowsSupportFragment: RowsSupportFragment = RowsSupportFragment()
-                    rowsSupportFragment.adapter = rowsAdapter
-                    fragmentAdapter.add(rowsSupportFragment)
-                    val header: HeaderItem = HeaderItem(0, categoryName)
-                    mainAdapter.add(ListRow(header, fragmentAdapter))
+                    val header: CustomHeaderItem = CustomHeaderItem(categoryIndex.toLong(), categoryName, category)
+                    val pageRow: PageRow = PageRow(header)
+                    mainAdapter.add(pageRow)
                 }
             }
         }
-        adapter = mainAdapter
+
         if(context!=null){
             //左側 HeaderSupportFragment 的背景
             brandColor = ContextCompat.getColor(context!!, R.color.header_background)
@@ -89,5 +60,4 @@ class MainFragment: BrowseSupportFragment() {
             badgeDrawable = ContextCompat.getDrawable(context!!, R.drawable.vscinemas_logo)
         }
     }
-
 }
