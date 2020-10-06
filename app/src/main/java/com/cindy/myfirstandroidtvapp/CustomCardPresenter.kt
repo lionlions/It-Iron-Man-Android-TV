@@ -19,8 +19,14 @@ class CustomCardPresenter: Presenter() {
         if(BuildConfig.DEBUG) Log.v(TAG, "===== onCreateViewHolder =====")
 
         mContext = parent?.context
+        Log.w(TAG, "mContext is null or not???? ${mContext == null}")
 
-        var cardView: ImageCardView = ImageCardView(mContext)
+        val cardView: ImageCardView = ImageCardView(mContext)
+//        Log.w(TAG, "cardView is null or not???? ${cardView == null}")
+//        val layoutParams: ViewGroup.LayoutParams = cardView.layoutParams
+//        layoutParams.width = ViewGroup.LayoutParams.WRAP_CONTENT
+//        layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
+//        cardView.layoutParams = layoutParams
         //顯示的類型
         cardView.cardType = BaseCardView.CARD_TYPE_INFO_OVER
 
