@@ -37,4 +37,7 @@ dependencies {
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.11.0'
 
+    //Tab
+    implementation 'androidx.leanback:leanback-tab:1.1.0-alpha05'
+
 }
