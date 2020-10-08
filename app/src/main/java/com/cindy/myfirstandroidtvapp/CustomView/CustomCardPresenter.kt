@@ -1,14 +1,14 @@
-package com.cindy.myfirstandroidtvapp
+package com.cindy.myfirstandroidtvapp.CustomView
 
 import android.content.Context
 import android.util.Log
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.leanback.widget.BaseCardView
 import androidx.leanback.widget.ImageCardView
 import androidx.leanback.widget.Presenter
 import com.bumptech.glide.Glide
-import com.cindy.myfirstandroidtvapp.model.Item
+import com.cindy.myfirstandroidtvapp.BuildConfig
+import com.cindy.myfirstandroidtvapp.Model.Item
 
 class CustomCardPresenter: Presenter() {
 
@@ -22,11 +22,6 @@ class CustomCardPresenter: Presenter() {
         Log.w(TAG, "mContext is null or not???? ${mContext == null}")
 
         val cardView: ImageCardView = ImageCardView(mContext)
-//        Log.w(TAG, "cardView is null or not???? ${cardView == null}")
-//        val layoutParams: ViewGroup.LayoutParams = cardView.layoutParams
-//        layoutParams.width = ViewGroup.LayoutParams.WRAP_CONTENT
-//        layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
-//        cardView.layoutParams = layoutParams
         //顯示的類型
         cardView.cardType = BaseCardView.CARD_TYPE_INFO_OVER
 

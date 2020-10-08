@@ -5,12 +5,10 @@ import android.util.Log
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.leanback.app.BrowseSupportFragment
-import androidx.leanback.app.RowsSupportFragment
 import androidx.leanback.widget.*
-import com.cindy.myfirstandroidtvapp.model.Data
-import com.cindy.myfirstandroidtvapp.model.Item
-import com.cindy.myfirstandroidtvapp.model.MovieList
-import com.cindy.myfirstandroidtvapp.model.SubCategory
+import com.cindy.myfirstandroidtvapp.CustomView.CustomHeaderItem
+import com.cindy.myfirstandroidtvapp.Model.Data
+import com.cindy.myfirstandroidtvapp.Model.MovieList
 import com.google.gson.Gson
 
 class MainFragment: BrowseSupportFragment() {
@@ -24,7 +22,7 @@ class MainFragment: BrowseSupportFragment() {
 
         getMovieList()
         init()
-        mainFragmentRegistry.registerFragment(PageRow::class.java, PageRowFragmentFactory())
+        mainFragmentRegistry.registerFragment(PageRow::class.java, PageRowFragmentFactory(activity))
 
     }
 
@@ -46,7 +44,12 @@ class MainFragment: BrowseSupportFragment() {
                 for((categoryIndex, category) in mMovieListData!!.withIndex()){
                     val categoryName: String? = category.category_name
                     if(BuildConfig.DEBUG) Log.w(TAG, "categoryName: $categoryName")
-                    val header: CustomHeaderItem = CustomHeaderItem(categoryIndex.toLong(), categoryName, category)
+                    val header: CustomHeaderItem =
+                        CustomHeaderItem(
+                            categoryIndex.toLong(),
+                            categoryName,
+                            category
+                        )
                     val pageRow: PageRow = PageRow(header)
                     mainAdapter.add(pageRow)
                 }

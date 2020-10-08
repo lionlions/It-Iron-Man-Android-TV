@@ -1,15 +1,19 @@
 package com.cindy.myfirstandroidtvapp
 
+import android.content.Context
 import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.leanback.app.BrowseSupportFragment
 import androidx.leanback.app.RowsSupportFragment
 import androidx.leanback.widget.*
-import com.cindy.myfirstandroidtvapp.model.Data
-import com.cindy.myfirstandroidtvapp.model.Item
-import com.cindy.myfirstandroidtvapp.model.SubCategory
+import com.cindy.myfirstandroidtvapp.CustomView.CustomCardPresenter
+import com.cindy.myfirstandroidtvapp.CustomView.CustomHeaderItem
+import com.cindy.myfirstandroidtvapp.CustomView.CustomListRowPresenter
+import com.cindy.myfirstandroidtvapp.Model.Data
+import com.cindy.myfirstandroidtvapp.Model.Item
+import com.cindy.myfirstandroidtvapp.Model.SubCategory
 
-class PageRowFragmentFactory: BrowseSupportFragment.FragmentFactory<Fragment?>() {
+class PageRowFragmentFactory(var mContext: Context? = null): BrowseSupportFragment.FragmentFactory<Fragment?>() {
 
     private val TAG: String = javaClass.simpleName
 
@@ -24,12 +28,20 @@ class PageRowFragmentFactory: BrowseSupportFragment.FragmentFactory<Fragment?>()
                     val subCategoryList: List<SubCategory>? = sub_categories
                     if(subCategoryList!=null && subCategoryList.isNotEmpty()){
                         val rowsSupportFragment: RowsSupportFragment = RowsSupportFragment()
-                        val rowsAdapter: ArrayObjectAdapter = ArrayObjectAdapter(ListRowPresenter())
+                        val rowsAdapter: ArrayObjectAdapter = ArrayObjectAdapter(
+                            CustomListRowPresenter(
+                                mContext,
+                                FocusType.START,
+                                FocusHighlight.ZOOM_FACTOR_XSMALL
+                            )
+                        )
                         for ((subCategoryIndex, subCategory) in subCategoryList.withIndex()){
                             val subCategoryName: String? = subCategory.sub_category_name
                             if(BuildConfig.DEBUG) Log.d(TAG, "subCategoryName: $subCategoryName")
                             val items: List<Item>? = subCategory.items
-                            val listRowAdapter: ArrayObjectAdapter = ArrayObjectAdapter(CustomCardPresenter())
+                            val listRowAdapter: ArrayObjectAdapter = ArrayObjectAdapter(
+                                CustomCardPresenter()
+                            )
                             if(items!=null && items.isNotEmpty()){
                                 for(item in items){
                                     if(BuildConfig.DEBUG) Log.i(TAG, "movieName: ${item.name}")

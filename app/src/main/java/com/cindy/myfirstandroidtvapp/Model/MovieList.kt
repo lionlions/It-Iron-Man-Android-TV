@@ -1,4 +1,4 @@
-package com.cindy.myfirstandroidtvapp.model
+package com.cindy.myfirstandroidtvapp.Model
 
 data class MovieList(
     var data: List<Data>? = null

@@ -9,9 +9,10 @@ import androidx.leanback.widget.ArrayObjectAdapter
 import androidx.leanback.widget.HeaderItem
 import androidx.leanback.widget.ListRow
 import androidx.leanback.widget.ListRowPresenter
-import com.cindy.myfirstandroidtvapp.model.Data
-import com.cindy.myfirstandroidtvapp.model.Item
-import com.cindy.myfirstandroidtvapp.model.SubCategory
+import com.cindy.myfirstandroidtvapp.CustomView.CustomCardPresenter
+import com.cindy.myfirstandroidtvapp.Model.Data
+import com.cindy.myfirstandroidtvapp.Model.Item
+import com.cindy.myfirstandroidtvapp.Model.SubCategory
 
 class TopTabViewPagerAdapter(fragmentManager: FragmentManager, behavior: Int, var mMovieListData: List<Data>? = null): FragmentStatePagerAdapter(fragmentManager, behavior) {
 

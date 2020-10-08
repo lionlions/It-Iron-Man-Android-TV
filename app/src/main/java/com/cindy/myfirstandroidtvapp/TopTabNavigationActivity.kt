@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentStatePagerAdapter
-import com.cindy.myfirstandroidtvapp.model.Data
-import com.cindy.myfirstandroidtvapp.model.MovieList
+import com.cindy.myfirstandroidtvapp.Model.Data
+import com.cindy.myfirstandroidtvapp.Model.MovieList
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_top_tab_navigation.*
 

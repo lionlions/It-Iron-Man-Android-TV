@@ -1,4 +1,4 @@
-package com.cindy.myfirstandroidtvapp
+package com.cindy.myfirstandroidtvapp.CustomView
 
 import androidx.leanback.widget.HeaderItem
 
