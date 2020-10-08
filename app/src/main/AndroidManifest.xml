@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TopTabNavicationActivity"
+        <activity android:name=".TopTabNavigationActivity"
             android:theme="@style/Theme.AppCompat"/>
         <activity android:name=".BrowseSupportFragmentActivity" />
     </application>

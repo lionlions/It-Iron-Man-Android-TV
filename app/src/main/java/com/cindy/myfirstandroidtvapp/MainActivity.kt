@@ -2,7 +2,6 @@ package com.cindy.myfirstandroidtvapp
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
@@ -30,7 +29,7 @@ class MainActivity : Activity() {
             override fun onClick(view: View?) {
 
                 val intent: Intent = Intent()
-                intent.setClass(this@MainActivity, TopTabNavicationActivity::class.java)
+                intent.setClass(this@MainActivity, TopTabNavigationActivity::class.java)
                 startActivity(intent)
 
             }
