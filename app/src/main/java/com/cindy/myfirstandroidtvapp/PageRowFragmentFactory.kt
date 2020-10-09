@@ -12,6 +12,7 @@ import com.cindy.myfirstandroidtvapp.CustomView.CustomListRowPresenter
 import com.cindy.myfirstandroidtvapp.Model.Data
 import com.cindy.myfirstandroidtvapp.Model.Item
 import com.cindy.myfirstandroidtvapp.Model.SubCategory
+import com.cindy.myfirstandroidtvapp.Model.BannerData
 
 class PageRowFragmentFactory(var mContext: Context? = null): BrowseSupportFragment.FragmentFactory<Fragment?>() {
 
@@ -47,10 +48,26 @@ class PageRowFragmentFactory(var mContext: Context? = null): BrowseSupportFragme
                                     if(BuildConfig.DEBUG) Log.i(TAG, "movieName: ${item.name}")
                                     listRowAdapter.add(item)
                                 }
-                                val header: HeaderItem = HeaderItem(0, subCategoryName)
+                                val header: HeaderItem = HeaderItem(subCategoryIndex.toLong(), subCategoryName)
                                 rowsAdapter.add(ListRow(header, listRowAdapter))
                             }
                         }
+                        rowsSupportFragment.adapter = rowsAdapter
+                        return  rowsSupportFragment
+                    }
+                }
+                is BannerData -> {
+                    val rowsSupportFragment: RowsSupportFragment = RowsSupportFragment()
+                    val rowsAdapter: ArrayObjectAdapter = ArrayObjectAdapter(ListRowPresenter())
+                    val listRowAdapter: ArrayObjectAdapter = ArrayObjectAdapter(CustomBannerCardPresenter())
+                    val items: List<String>? = banner_list
+                    if(items!=null && items.isNotEmpty()){
+                        for(item in items){
+                            if(BuildConfig.DEBUG) Log.i(TAG, "imageUrl: $item")
+                            listRowAdapter.add(item)
+                        }
+                        val header: HeaderItem = HeaderItem(0, "")
+                        rowsAdapter.add(ListRow(header, listRowAdapter))
                         rowsSupportFragment.adapter = rowsAdapter
                         return  rowsSupportFragment
                     }
