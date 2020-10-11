@@ -33,7 +33,7 @@ class PageRowFragmentFactory(var mContext: Context? = null): BrowseSupportFragme
                             CustomListRowPresenter(
                                 mContext,
                                 FocusType.START,
-                                FocusHighlight.ZOOM_FACTOR_XSMALL
+                                focusHightlightMode = FocusHighlight.ZOOM_FACTOR_XSMALL
                             )
                         )
                         for ((subCategoryIndex, subCategory) in subCategoryList.withIndex()){
@@ -58,7 +58,11 @@ class PageRowFragmentFactory(var mContext: Context? = null): BrowseSupportFragme
                 }
                 is BannerData -> {
                     val rowsSupportFragment: RowsSupportFragment = RowsSupportFragment()
-                    val rowsAdapter: ArrayObjectAdapter = ArrayObjectAdapter(ListRowPresenter())
+                    val rowsAdapter: ArrayObjectAdapter = ArrayObjectAdapter(
+                        CustomListRowPresenter(
+                            mContext,
+                            isBanner = true
+                    ))
                     val listRowAdapter: ArrayObjectAdapter = ArrayObjectAdapter(CustomBannerCardPresenter())
                     val items: List<String>? = banner_list
                     if(items!=null && items.isNotEmpty()){
